@@ -1,3 +1,5 @@
+package Lab1;
+
 import java.util.Scanner;
 
 public class T3 implements Runnable {
@@ -9,7 +11,7 @@ public class T3 implements Runnable {
 
     @Override
     public void run() {
-        System.out.println("[F3] T3 is started");
+        System.out.println("[F3] Lab1.T3 is started");
 
         int[] R, S;
         int[][] MO, MP;
@@ -33,7 +35,7 @@ public class T3 implements Runnable {
         int[] sum = Data.addVec(Rmult, S);
         int[] sorted = Data.sortVec(sum);
 
-        Data.printVector("T3 result (F3=3.27): ", sorted);
-        System.out.println("[F3] T3 is finished");
+        Data.printVector("Lab1.T3 result (F3=3.27): ", sorted);
+        System.out.println("[F3] Lab1.T3 is finished");
     }
 }

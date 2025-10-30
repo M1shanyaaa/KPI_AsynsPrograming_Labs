@@ -1,3 +1,5 @@
+package Lab1;
+
 import java.util.Scanner;
 
 public class T2 implements Runnable {
@@ -9,7 +11,7 @@ public class T2 implements Runnable {
 
     @Override
     public void run() {
-        System.out.println("[F2] T2 is started");
+        System.out.println("[F2] Lab1.T2 is started");
 
         int[][] MA, MG, MZ, ML;
         boolean manual = (n < 4);
@@ -36,7 +38,7 @@ public class T2 implements Runnable {
             for (int j = 0; j < n; j++)
                 MK[i][j] = MAMGZ[i][j] + trML[i][j];
 
-        Data.printMatrix("T2 result (F2=2.10):", MK);
-        System.out.println("[F2] T2 is finished");
+        Data.printMatrix("Lab1.T2 result (F2=2.10):", MK);
+        System.out.println("[F2] Lab1.T2 is finished");
     }
 }

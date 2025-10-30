@@ -1,3 +1,5 @@
+package Lab1;
+
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -10,7 +12,7 @@ public class T1 implements Runnable {
 
     @Override
     public void run() {
-        System.out.println("[F1] T1 is started");
+        System.out.println("[F1] Lab1.T1 is started");
         int[] A, B, C;
         int[][] MA, MD;
 
@@ -41,7 +43,7 @@ public class T1 implements Runnable {
             D[i] = minAB * BC[i] * rowSum;
         }
 
-        Data.printVector("T1 result (F1): ", D);
-        System.out.println("[F1] T1 finished");
+        Data.printVector("Lab1.T1 result (F1): ", D);
+        System.out.println("[F1] Lab1.T1 finished");
     }
 }
